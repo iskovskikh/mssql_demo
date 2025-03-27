@@ -8,4 +8,6 @@ services:
     ports:
       - 1433:1433
     volumes:
-      - ../backend/app/:/app/
+      - ./mssql_data/data:/var/opt/mssql/data
+      - ./mssql_data/log:/var/opt/mssql/log
+      - ./mssql_data/secrets:/var/opt/mssql/secrets
